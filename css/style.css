@@ -1,0 +1,240 @@
+/*total*/
+*{
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url('../fonts/MyriadProBold.eot');
+  src: url('../fonts/MyriadProBold.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadProBold.woff') format('woff'), url('../fonts/MyriadProBold.ttf') format('truetype');
+  font-weight: '700';
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url('../fonts/MyriadProRegular.eot');
+  src: url('../fonts/MyriadProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadProRegular.woff') format('woff'), url('../fonts/MyriadProRegular.ttf') format('truetype');
+  font-weight: '400';
+  font-style: normal;
+}
+html{
+	height: 100%;
+}
+body{
+	font-size: 16px;
+	font-family: 'MyriadProRegular';
+	font-weight: 400;
+	color: #3a3a3a;
+	min-height: 100%;
+	height: auto;
+	position: relative;
+}
+.wrapper{
+	width: 800px;
+	margin: 0 auto;
+}
+h2{
+	font-weight: 700;
+	font-size: 1.63rem;
+	margin: 50px 0 30px 0;
+}
+h2:not(.memberProfession):before{
+	content: "\f0b1";
+	font-family: FontAwesome;
+	font-size: 1.2rem;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	width: 45px;
+	height: 45px;
+	background-color: #525ea7;
+	border-radius: 50%;
+}
+/*total*/
+/*header*/
+header, footer{
+	color: #fff;
+	font-size: 1.125rem;
+}
+header{
+	background-color: #525ea7;
+	padding: 70px 0 50px 0;
+	overflow: hidden;
+}
+.member, .contact{
+	display: inline-block;
+}
+.member, .memberPhoto{
+	display: inline-block;
+	vertical-align: middle;
+}
+.member{
+	margin-left: 30px;
+}
+.memberName{
+	font-family: 'MyriadProBold';
+	font-weight: 700;
+	font-size: 2.44rem;
+	margin-bottom: -25px;
+}
+.memberProfession{
+	font-size: 1.44rem;
+}
+.memberName:hover, .memberProfession:hover{
+	color: rgba(245, 245, 47, 0.9);
+}
+.memberPhoto{
+	border: 5px solid transparent;
+	border-radius: 50%;
+}
+.memberPhoto:hover{
+	border: 5px solid rgba(245, 245, 47, 0.9);
+}
+.contact{
+	float: right;
+	width: 150px;
+	line-height: 1.5;
+}
+.contact__adress, .contact__email, .contact__phone{
+	position: relative;
+}
+.contact__adress:before{
+	content: "\f041";
+}
+.contact__email:before{
+	content: "\f0ac";
+}
+.contact__phone:before{
+	content: "\f095";
+}
+.contact__adress:before, .contact__email:before, .contact__phone:before{
+	font-family: FontAwesome;
+	font-size: 1.2rem;
+	position: absolute;
+	color: #fff;
+	left: -30px;
+}
+/*head*/
+/*main*/
+main{
+	margin-left: 240px;
+	padding-left: 50px;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+main h2{
+	margin-left: -50px;
+}
+main h2:before{
+	margin-right: 30px;
+}
+.works{
+	float: right;
+	font-size: 1.125rem;
+	text-align: center;
+	margin: 50px 0 0 10px;
+}
+.works:nth-of-type(2n+1){
+	clear: both;
+}
+.works:nth-of-type(n+5){
+	margin-bottom: 80px;
+}
+.works h3{
+	margin: 25px 0 15px 0;
+	font-weight: 700;
+}
+/*main*/
+/*aside*/
+aside{
+	float: left;
+ 	width: 240px;
+ 	font-size: 1.13rem;
+ 	padding-bottom: 80px;
+}
+aside h2:before{
+	margin-right: 20px;
+}
+.info p{
+	line-height: 1.5;
+}
+ul ul li:nth-child(2){
+	color: #525ea7;
+	position: relative;
+}
+ul ul li:nth-child(2):before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: -30px;
+	top: 50%;
+	margin-top: -7.5px;
+	width: 15px;
+	height: 15px;
+	border: 6px solid #969494;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+.afterLine:after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: -23px;
+	top: 15px;
+	background-color: #969494;
+	width: 2px;
+	height: 110px;
+}
+ul ul li{
+	margin: 10px 0;
+}
+.workPlace > ul > li{
+	margin: 0 0 45px 0;
+}
+.interests{
+	font-size: 0;
+}
+.interests div{
+	width: 50px;
+	height: 50px;
+	border: 5px solid #525ea7;
+	border-radius: 50%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+i.fa{
+	line-height: 40px;
+	color: #525ea7;
+	font-size: 1.23rem;
+}
+figure{
+	font-size: 1.13rem;
+	display: inline-block;
+	width: 30%;
+	margin: 0;
+} 
+figcaption{
+	font-weight: 700;
+}
+.awards li{
+	margin: 20px 0;
+	font-weight: 700;
+}
+/*aside*/
+/*footer*/
+footer{
+	/*clear: both;*/
+	background-color: #535fa7;
+	padding: 50px 0 30px 0;
+	position: absolute;
+	bottom: 0;
+	height: 45px;
+	width: 100%;
+}
+footer strong{
+	font-weight: 700;
+}
+/*footer*/
+figure:hover div{
+	background-color: rgba(245, 245, 47, 0.9);
+}
